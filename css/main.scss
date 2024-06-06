@@ -1,0 +1,115 @@
+
+
+
+//color variables
+
+$color-light-gray: #CBC6C2;
+$color-ray: #B9AC9B;
+$color-white: #ffffff;
+
+
+figure,figcaption,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+
+button{
+    background-color: transparent;
+}
+
+
+//styling of header section
+
+header{
+    background-color: $color-white;
+}
+
+.logo{
+    height: calc(6rem + 3vh);
+}
+
+.heading_sect{
+    font-size: calc(1rem + 1.5vw);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    small{
+        color: $color-light-gray;
+        font-size: 45%;
+        display: block;
+        border-top: 1px solid $color-light-gray;
+        margin: .5rem auto 2rem;
+        width: fit-content;
+        padding-top: .5rem;
+    }
+}
+
+.nav_main{
+    flex: 1;
+
+    .navbar{
+        flex-direction: column;
+        padding: 0;
+
+        .nav-link{
+            padding: .5rem 1.5rem;
+        }
+    }
+}
+
+.flex_column{
+    flex-direction: column;
+}
+
+
+.reserve_btn{
+    background-color: $color-ray;
+    padding: 0 1rem .5rem 1rem;
+    span{
+        display: block;
+        margin-top: auto;
+        text-transform: uppercase;
+    }
+
+}
+
+//styling of header section
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+//styling of hero section
+
+.hero{
+    padding-top: 4rem;
+    .heading_sect{
+        display: none;
+    }
+}
+
+.hero_tet{
+    text-align: justify;
+}
+
+
+@media(max-width: 992px){
+    .navbar-toggler{
+        margin-left: auto;
+        margin-top: 2rem;
+    }
+}
+
+.d_none{
+    display: none;
+}
+
+
+.d_block{
+    display: block!important;
+}
